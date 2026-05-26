@@ -39,16 +39,16 @@ Cidesus automates the entire analytics lifecycle by:
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                         DATA PIPELINE ARCHITECTURE                     │
+│                         DATA PIPELINE ARCHITECTURE                      │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                         │
-│  [CFPB CSV/ZIP] ─► [Bronze] ─► [Silver] ─► [Gold Analytics Layer]      │
+│  [CFPB CSV/ZIP] ─► [Bronze] ─► [Silver] ─► [Gold Analytics Layer]       │
 │                                                                         │
 │   Raw Data         Raw Files      Cleaned Data      KPIs & Metrics      │
 │                                                                         │
 │  ┌───────────┐   ┌───────────┐   ┌────────────┐   ┌────────────────┐    │
-│  │ CSV/ZIP   │─► │ PySpark   │─► │ Feature    │─► │ Parquet + SQL │    │
-│  │ Ingestion │   │ Cleaning  │   │ Engineering│   │ Analytics     │    │
+│  │ CSV/ZIP   │─► │ PySpark   │─► │ Feature    │─► │ Parquet + SQL  │    │
+│  │ Ingestion │   │ Cleaning  │   │ Engineering│   │ Analytics      │    │
 │  └───────────┘   └───────────┘   └────────────┘   └────────────────┘    │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
